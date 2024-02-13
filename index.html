@@ -1,0 +1,95 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 50px;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #sim {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #nao {
+      background-color: #F44336;
+      color: white;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+    <html>
+        <head>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              text-align: center;
+            }
+        
+            h1 {
+              color: #333;
+              margin-top: 50px;
+            }
+        
+            button {
+              width: 100px;
+              height: 50px;
+              font-size: 20px;
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+            }
+        
+            #sim {
+              background-color: #4CAF50;
+              color: white;
+            }
+        
+            #nao {
+              background-color: #F44336;
+              color: white;
+              position: absolute;
+              top: 200px;
+              left: 200px;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>Chanceleia , se eu pedisse pra sair contigo eu conseguiria ?</h1>
+          <a href="https://www.youtube.com/watch?v=XwnNdWE-px8" target="_blank"><button id="sim">Sim</button></a>
+          <button id="nao" onmouseover="moverNao()">Não</button>
+          <img src="Screenshot_32.png" style="margin-top: 100px; margin-left: 100px;"> <!-- Aqui está a imagem -->
+
+          <script>
+            function responderSim() {
+              alert("");
+            }
+        
+            function moverNao() {
+              var nao = document.getElementById("nao");
+              var x = Math.floor(Math.random() * window.innerWidth - 100);
+              var y = Math.floor(Math.random() * window.innerHeight - 50);
+              nao.style.left = x + "px";
+              nao.style.top = y + "px";
+            }
+          </script>
+        
+</body>
+</html>
